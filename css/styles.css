@@ -1,4 +1,4 @@
-/* Рут */
+/* =======Палитра======= */
 :root {
   --main-text-color: #212121;
   --sec-text-color: #757575;
@@ -8,14 +8,14 @@
   --white-opacity: rgba(255, 255, 255, 0.6);
   --logo: #000000;
   --alt-bg: #2f303a;
-  --filter-bg: #f5f4fa;
+  --secondary-bg: #f5f4fa;
   --button-bg-active: #188ce8;
 }
 
-/* Глобальные */
+/* =======Глобальные======= */
 body {
   color: var(--main-text-color);
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
 }
@@ -27,6 +27,8 @@ body {
 .filter,
 .works {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .navigation-logo,
@@ -45,7 +47,13 @@ body {
   color: var(--accent);
 }
 
-/* логотипы */
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* =======Логотипы======= */
 .navigation-logo,
 .contact-logo {
   font-family: Raleway, sans-serif;
@@ -59,6 +67,8 @@ body {
 }
 
 .contact-logo {
+  display: inline-block;
+  margin-bottom: 20px;
   color: var(--white);
 }
 
@@ -66,7 +76,16 @@ body {
   color: var(--accent);
 }
 
-/* Навигация */
+.section {
+  padding: 94px 0;
+}
+
+/* =======Навигация======= */
+
+.head-section {
+  border: 1px solid #ececec;
+}
+
 .navigation-address,
 .navigation-link {
   font-weight: 500;
@@ -89,20 +108,27 @@ body {
   color: var(--accent);
 }
 
-/* Герой */
+/* =======Герой======= */
 .hero {
+  text-align: center;
   background-color: var(--alt-bg);
 }
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   color: var(--white);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .button {
+  padding: 10px 32px;
+  border: 0px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: var(--accent);
   color: var(--white);
   font-size: 16px;
@@ -116,22 +142,44 @@ body {
   background-color: var(--button-bg-active);
 }
 
-/* Преимущества */
+/* =======Преимущества======= */
 
 .feature-desc {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--sec-text-color);
   line-height: 24px;
 }
 .feature-item {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
 
-/* Чем мы занимаемся + Наша команда */
+/* =======Чем мы занимаемся + Наша команда======= */
+
+.team {
+  background-color: var(--secondary-bg);
+}
+
+.team-photo {
+  margin-bottom: 30px;
+}
+
+.team-list-card {
+  background-color: var(--white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .occupation-title,
 .team-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -140,20 +188,26 @@ body {
 
 .team-member,
 .team-role {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
 }
 
 .team-member {
+  margin-bottom: 10px;
   font-weight: 500;
 }
 .team-role {
+  padding-bottom: 30px;
   color: var(--sec-text-color);
 }
 
-/* Футер */
+/* =======Футер======= */
 .contact {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--alt-bg);
   color: var(--white);
 }
@@ -163,11 +217,19 @@ body {
 }
 
 .contact-address {
+  margin-top: 0;
+  margin-bottom: 9px;
   line-height: 1.7;
 }
 
 .contact-link {
+  display: inline-block;
+  margin-bottom: 9px;
   color: var(--white-opacity);
+}
+
+.contact-link:last-child {
+  margin-bottom: 0;
 }
 
 .contact-link:focus,
@@ -175,11 +237,11 @@ body {
   color: var(--accent-opacity);
 }
 
-/* ПОРТФОЛИО */
+/* =======ПОРТФОЛИО======= */
 
-/* Фильтры */
+/* =======Фильтры======= */
 .filter-button {
-  background-color: var(--filter-bg);
+  background-color: var(--secondary-bg);
   color: var(--main-text-color);
   font-family: inherit;
   font-weight: 500;
@@ -195,8 +257,10 @@ body {
   color: var(--white);
 }
 
-/* Работы */
+/* =======Работы======= */
 .works-item {
+  margin-top: 0;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -204,7 +268,13 @@ body {
 }
 
 .works-id {
+  margin-top: 0;
+  margin-bottom: 4px;
   color: var(--sec-text-color);
   font-size: 16px;
   line-height: 1.87;
+}
+
+.work-list-card {
+  border: 1px solid #eeeeee;
 }

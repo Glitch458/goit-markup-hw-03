@@ -82,6 +82,10 @@ body {
 
 /* =======Навигация======= */
 
+.main-header {
+  border: 1px solid #ececec;
+}
+
 .header {
   display: flex;
   align-items: center;

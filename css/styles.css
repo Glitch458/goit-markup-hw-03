@@ -91,10 +91,6 @@ body {
   align-items: center;
 }
 
-.head-section {
-  border: 1px solid #ececec;
-}
-
 .navigation {
   display: flex;
   align-items: center;

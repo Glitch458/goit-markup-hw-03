@@ -79,6 +79,12 @@ body {
 .section {
   padding: 94px 0;
 }
+.hero.section {
+  padding: 200px 0;
+}
+.section.no-padding-bottom {
+  padding-bottom: 0;
+}
 
 /* =======Навигация======= */
 
@@ -202,6 +208,16 @@ body {
   justify-content: space-between;
 }
 
+.occupation-title,
+.team-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
 /* =======Наша команда======= */
 
 .team {
@@ -213,10 +229,6 @@ body {
   justify-content: space-between;
 }
 
-.team-photo {
-  margin-bottom: 30px;
-}
-
 .team-list-card {
   background-color: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -224,14 +236,8 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.occupation-title,
-.team-title {
-  margin-top: 0;
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
+.team-list-card-description {
+  padding: 30px 0;
 }
 
 .team-member,
@@ -248,7 +254,6 @@ body {
   font-weight: 500;
 }
 .team-role {
-  padding-bottom: 30px;
   color: var(--sec-text-color);
 }
 

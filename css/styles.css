@@ -147,8 +147,8 @@ body {
   background-color: var(--alt-bg);
 }
 .hero-title {
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
+  width: 696px;
 
   color: var(--white);
   font-weight: 900;
